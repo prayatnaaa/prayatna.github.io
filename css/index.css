@@ -233,3 +233,124 @@ body {
   font-size: 15px;
   margin-bottom: 23px;
 }
+
+.about {
+  background-color: #111111;
+  height: 100%;
+  padding: 95px 0;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  align-items: center;
+  width: 1250px;
+  height: 467px;
+  min-height: 467px;
+
+  .big-text-wrapper {
+    max-height: 134px;
+    position: relative;
+    align-self: flex-start;
+    margin-bottom: 64px;
+  }
+
+  .ico-line {
+    position: absolute;
+    top: calc(100% + 15px);
+  }
+
+  .location-text {
+    position: absolute;
+    max-width: fit-content;
+    left: 0;
+    bottom: calc(100% + 39px);
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    background: linear-gradient(
+      90deg,
+      #c6f1f7 0%,
+      #f983e9 36%,
+      #b877ff 74%,
+      #c2e9cd 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .big-text {
+    font-size: 54px;
+    font-weight: 300;
+    max-width: 709.57px;
+
+    background: linear-gradient(
+      90deg,
+      #c6f1f7 0%,
+      #f983e9 36%,
+      #b877ff 74%,
+      #c2e9cd 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .since-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    gap: 6px;
+    right: 0;
+    bottom: 0;
+    width: 241.19px;
+    min-width: 241.19px;
+    height: 276px;
+    min-width: none;
+    height: 276px;
+    background-color: #202020;
+
+    .ball-wrapper {
+      width: 216.17px;
+      height: 211px;
+    }
+
+    .since-text {
+      width: 67.05px;
+      min-width: 67.05px;
+      height: 34px;
+      min-height: 34px;
+
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+
+      background: linear-gradient(
+        90deg,
+        #c6f1f7 0%,
+        #f983e9 36%,
+        #b877ff 74%,
+        #c2e9cd 100%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  .team-text,
+  .creative-text {
+    max-width: 432.35px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 31px;
+  }
+}
