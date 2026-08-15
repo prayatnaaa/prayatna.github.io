@@ -236,7 +236,6 @@ body {
 
 .about {
   background-color: #111111;
-  height: 100%;
   padding: 95px 0;
 }
 
@@ -352,5 +351,268 @@ body {
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 31px;
+    color: #e4e4e4;
   }
+}
+
+.about-cards {
+  width: 1249px;
+  max-width: calc(100% - 48px);
+  max-height: 576px;
+  margin: 0 auto;
+  margin-top: 157px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  aspect-ratio: 2 / 1;
+
+  .card-item {
+    position: relative;
+
+    max-width: 276.22px;
+
+    padding: 104px 300.78px 50.96px 48px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+  }
+
+  .card-number {
+    margin-bottom: 37.96px;
+    font-weight: 300;
+    font-size: 40px;
+  }
+
+  .card-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .card-01 {
+    background: url("../images/bg_about_01.jpg");
+  }
+  .card-02 {
+    background: url("../images/bg_about_02.jpg");
+  }
+  .card-03 {
+    background: url("../images/bg_about_03.jpg");
+  }
+  .card-04 {
+    background: url("../images/bg_about_04.jpg");
+  }
+}
+
+.expertise {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  background-color: #111111;
+
+  .expertise-content {
+    position: relative;
+    margin-top: 70px;
+    min-width: 1250px;
+    min-height: 926px;
+  }
+
+  .big-text-wrapper {
+    position: relative;
+  }
+
+  .big-text {
+    position: relative;
+    max-width: 780px;
+    align-self: flex-start;
+    font-weight: 300;
+    font-size: 54px;
+    background: linear-gradient(
+      90deg,
+      #c6f1f7 0%,
+      #f983e9 36%,
+      #b877ff 74%,
+      #c2e9cd 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .location-text {
+    width: 82px;
+    position: absolute;
+    top: calc(100% + 85px);
+
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+    background: linear-gradient(
+      90deg,
+      #c6f1f7 0%,
+      #f983e9 36%,
+      #b877ff 74%,
+      #c2e9cd 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .logo {
+    position: absolute;
+    top: calc(100% + 595px);
+  }
+
+  .line-icon {
+    position: absolute;
+    bottom: 100%;
+    right: 83px;
+  }
+
+  .main-text-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    .text {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #e4e4e4;
+    }
+
+    .upper-text {
+      display: flex;
+      gap: 109px;
+
+      .left-text {
+        max-width: 373px;
+      }
+      .right-text {
+        max-width: 432px;
+      }
+    }
+  }
+}
+
+.services {
+  width: 100%;
+  margin-top: 26px;
+
+  border: 2px solid #e4e4e4;
+  box-sizing: border-box;
+}
+
+.service-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 143px;
+}
+
+.service-tab {
+  border: 0;
+  border-right: 2px solid #e4e4e4;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-tab:last-child {
+  border-right: none;
+}
+
+.service-tab-text {
+  font-family: "Unbounded", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+
+  background: linear-gradient(
+    90deg,
+    #c6f1f7 0%,
+    #f983e9 36%,
+    #b877ff 74%,
+    #c2e9cd 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  opacity: 0.3;
+
+  transition: opacity 0.25s ease;
+}
+
+.service-tab.active .service-tab-text {
+  opacity: 1;
+}
+
+.service-tab:last-child {
+  border-right: none;
+}
+
+.service-content {
+  position: relative;
+  min-height: 230px;
+
+  border-top: 2px solid #e4e4e4;
+
+  display: flex;
+  flex-direction: row;
+  gap: 59px;
+
+  padding-top: 98.29px;
+  padding-left: 51px;
+  padding-bottom: 55px;
+
+  box-sizing: border-box;
+}
+
+.service-left {
+  position: relative;
+  max-width: 170px;
+}
+
+.service-right {
+  max-width: 361px;
+}
+
+.bottom-text {
+  max-width: 432px;
+  margin-top: 21px;
+}
+
+.bottom-text,
+.service-left,
+.service-right {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #e4e4e4;
+}
+
+.service-left p,
+.service-right p {
+  margin: 0;
+}
+
+.balls {
+  display: flex;
+  align-items: center;
+}
+
+.ball {
+  position: absolute;
+  bottom: calc(100% + 21.71px);
 }
